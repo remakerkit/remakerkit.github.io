@@ -58,7 +58,7 @@ export const App = () => {
 
 ## True or False
 
-There's a small caveat to using Remaker: variable values will always be strings. So, to compare whether something is true or false, you need to use it as a string.
+There's a small caveat to using Remaker: 
 
 ```yaml
 # remaker.template.yaml
@@ -70,7 +70,7 @@ parameters:
 `README.md`
 
 ```markup
-{%- if eq .isWebServer "true" }
+{%- if .isWebServer }
 This is a webserver
 {% end %}
 ```
